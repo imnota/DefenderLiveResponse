@@ -237,10 +237,10 @@ The comment to set on RequestorComment
 An auth token (not required if currently cached)
 
 .EXAMPLE
-Invoke-LiveResponseScript -aadDeviceID "e3f8f39d-be6d-45c9-80c3-4edc20202705" -scriptname "MyPreloadedScript.ps1" -comment "Rnning to remediate an issue" 
+Invoke-LiveResponseScript -aadDeviceID "a345e00e-6b4f-4425-956a-ef7c12e83cb7" -scriptname "MyPreloadedScript.ps1" -comment "Rnning to remediate an issue" 
 
 .NOTES
-The script you want to run must already exist in the Defender LiveResponse librayr
+The script you want to run must already exist in the Defender LiveResponse library
 #>
 function Invoke-LiveResponseScript {
     [CmdletBinding()]
