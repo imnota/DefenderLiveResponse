@@ -387,7 +387,7 @@ function Get-MachineAction {
         $response = Invoke-APICall -apiCall $uri -token $token 
     }
     catch {
-        throw "Error :$($_.Exception)"
+        throw $_
     }
     return $response    
 }
@@ -434,7 +434,7 @@ function Get-MachineActionResult {
             $response = Invoke-APICall -apiCall $uri -token $token 
         }
         catch {
-            throw "Error :$($_.Exception)"
+            throw $_
         }
 
         if ($response.value) {
