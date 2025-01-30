@@ -73,7 +73,7 @@ function Connect-SecurityCenter {
         [Parameter(Position = 1, mandatory = $true)] [string]$appSecret,
         [Parameter(Position = 2, mandatory = $false)] [string]$tenantID,
         [Parameter(Position = 3, Mandatory = $false)] 
-        [ValidateSet("api.security.microsoft.com", "api-us.security.microsoft.com", "api-eu.security.microsoft.com", "api-uk.security.microsoft.com")] 
+        [ValidateSet("api.securitycenter.microsoft.com", "api-us.securitycenter.microsoft.com", "api-eu.securitycenter.microsoft.com", "api-uk.securitycenter.microsoft.com")]
         [string]$securityCenterHost = "api-uk.securitycenter.microsoft.com",
         [Parameter(Position = 4, Mandatory = $false)] [bool]$returnToken = $false,
         [Parameter(Position = 5, Mandatory = $false)] [int]$minBackoffSecs = 30,
